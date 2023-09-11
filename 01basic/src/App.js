@@ -1,25 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './Components/Navbar';
+import Greet from './Components/Greet';
+import Welcome from './Components/Welcome';
+import Greets from './Components/Greet_props';
+import Message_state from './Components/Message_state';
+import Use_state from './Components/Use_state'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         Hello World !
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    <Navbar></Navbar>
+      <Use_state/>
+      {/* <Message_state/> */}
+
+      {/* <Greet></Greet>
+      <Welcome/>
+      <Greets name="Bruce" superhero="Hulk" />
+      <p>This is children props</p>
+      <Greets name="Clark" superhero="Batman"/>
+      <Greets name="Diana" superhero="Wonder Women"/> */}
+
     </div>
     
   );
