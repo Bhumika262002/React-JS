@@ -4,12 +4,14 @@ import Greet from './Components/Greet';
 import Welcome from './Components/Welcome';
 import Greets from './Components/Greet_props';
 import Message_state from './Components/Message_state';
-import Use_state from './Components/Use_state'
+import ClassCounter from './Components/ClassCounter'
+import HookCounterOne from './Components/HookCounterOne'
 
 function App() {
   return (
     <div className="App">
-      <Use_state/>
+      {/* <ClassCounter/> */}
+      <HookCounterOne/>
       {/* <Message_state/> */}
 
       {/* <Greet></Greet>
