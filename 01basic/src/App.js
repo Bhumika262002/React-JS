@@ -11,13 +11,16 @@ import Counter from './Components/Counter';
 import RFragment from './Components/RFragment';
 import Controlled from './Components/Contorlled';
 import Uncontrolled from './Components/Uncontrolled';
-
-
+import{Routes,Route} from 'react-router-dom';
+import Home from './Components/Home';
+import About from './Components/About';
+import LifecycleA from './Components/LifecycleA';
+import LifecycleB from './Components/LifecycleB.js';
 
 function App() {
   return (
     <div className="App">
-
+      {/* <Uncontrolled/> */}
       {/* <Controlled/> */}
       {/* <RFragment/> */}
       {/* <Counter /> */}
@@ -33,8 +36,14 @@ function App() {
       <Greets name="Clark" superhero="Batman"/>
       <Greets name="Diana" superhero="Wonder Women"/> */}
 
+    {/* <Routes>
+      <Route path='/' element={<Home />}></Route>
+      <Route path='about' element={<About />}></Route>
+    </Routes> */}
 
-    <Uncontrolled/>
+       <LifecycleA/>
+        
+  
     </div>
     
   );
