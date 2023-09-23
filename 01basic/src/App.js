@@ -10,12 +10,15 @@ import ParentComponent from './Components/ParentComponent';
 import Counter from './Components/Counter';
 import RFragment from './Components/RFragment';
 import Controlled from './Components/Contorlled';
+import Uncontrolled from './Components/Uncontrolled';
+
+
 
 function App() {
   return (
     <div className="App">
 
-      <Controlled/>
+      {/* <Controlled/> */}
       {/* <RFragment/> */}
       {/* <Counter /> */}
       {/* <ClassCounter/> */}
@@ -30,6 +33,8 @@ function App() {
       <Greets name="Clark" superhero="Batman"/>
       <Greets name="Diana" superhero="Wonder Women"/> */}
 
+
+    <Uncontrolled/>
     </div>
     
   );
