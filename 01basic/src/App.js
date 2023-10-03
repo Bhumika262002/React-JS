@@ -16,7 +16,9 @@ import Home from './Components/Home';
 import About from './Components/About';
 import LifecycleA from './Components/LifecycleA';
 import LifecycleB from './Components/LifecycleB.js';
-
+import ComponentC from './Components/ComponentC';
+export const UserContext = React.createContext()
+export const ChannelContext = React.createContext()
 function App() {
   return (
     <div className="App">
@@ -41,7 +43,12 @@ function App() {
       <Route path='about' element={<About />}></Route>
     </Routes> */}
 
-       <LifecycleA/>
+       {/* <LifecycleA/> */}
+       <UserContext.Provider value={'Bhumika'}>
+          <ChannelContext.Provider value={'Agri'}>
+					   <ComponentC />
+				  </ChannelContext.Provider>
+			</UserContext.Provider>
         
   
     </div>
